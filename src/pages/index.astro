@@ -1,12 +1,51 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<Header />
+<Layout title="Inicio">
+  <main>
+    <!-- Inicio -->
+    <section class="flex flex-col h-screen mx-8 pt-[6vh] md:mx-16 text-slate-50 md:pt-40">
+      <img class="blur-md absolute top-0 left-0 -z-10 h-screen w-screen object-cover" src="/indexbg.svg" alt="">
+       
+      <div class="flex" transition:animate="slide">
+        <!-- Texto -->
+        <div class="md:w-1/3 text-center md:text-left">
+          <h1 class="inline-flex flex-col text-xl mb-12">
+            Hola, mi nombre es 
+            <span class="text-xl gameplay">Julian Bosch</span> y soy
+            <span class="text-2xl border-b-4 py-2 mb-2 text-indigo-500 gameplay">Desarrollador FullStack</span>
+            <span class="text-2xl text-teal-500 gameplay">Estudiante Ingenieria en Sistemas</span> 
+          </h1>
+          <div class="w-full flex justify-center gap-10">
+            <a class="inline-block py-2 px-4 text-base uppercase border-none bg-teal-600 md:hover:bg-teal-400 transition-all arcade text-neutral-950 md:hover:outline-4 md:hover:outline md:hover:outline-offset-4" href="/skills">Saber mas</a>
+            <a class="inline-block py-2 px-4 text-base uppercase border-2 border-indigo-200 text-indigo-200 bg-indigo-200/10 md:hover:bg-indigo-200 md:hover:text-indigo-950 md:hover:border-indigo-200 transition-all arcade md:hover:outline-4 md:hover:outline md:hover:outline-indigo-700 md:hover:outline-offset-4" href="/contacto">Contactame</a>
+          </div>
+        </div>
 
-  <main class="text-slate-50">
-		
-	</main>
+        <!-- Imagen -->
+        <div class="md:flex flex-grow justify-end relative hidden md:visible">
+          <img id="foto" class="w-3/4 absolute -top-12" src="/programming.svg" alt="Imagen gratuita obtenida de unDraw.co">
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  #foto {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes glow {
+    from {
+      filter: drop-shadow(0px -15px 15px #3187c0a6)
+    }
+    to {
+      filter: drop-shadow(0px -20px 25px #582494cc)
+    }
+  }
+</style>

@@ -2,24 +2,24 @@
 
 ---
 
-<header class="flex justify-between items-center px-16 text-slate-50">
+<header class="flex pt-6 flex-col md:flex-row justify-between md:fixed md:top-0 w-full z-40 items-center md:px-16 md:pt-0 text-slate-50">
   <div class="flex flex-grow basis-0">
-    <a class="inline-block font-bold uppercase" href="#">JulianBosch</a>
+    <a class="gameplay inline-block uppercase border-2 px-4 py-1 md:hover:bg-indigo-200 md:hover:text-indigo-950 transition-all md:hover:outline-2 md:hover:outline md:hover:outline-indigo-400 md:hover:outline-offset-2" href="/">JulianBosch</a>
   </div>
 
-  <nav>
-    <ul class="flex gap-4 justify-around items-center text-md uppercase [&>li>a]:inline-block [&>li>a]:transition-all">
-      <li><a class="font-medium py-3 px-4 hover:bg-indigo-800 hover:bg-opacity-60 rounded-b-2xl" href="#">Inicio</a></li>
-      <li><a class="font-medium py-3 px-4 hover:bg-indigo-700 hover:bg-opacity-60 rounded-b-2xl" href="#">Acerca de mi</a></li>
-      <li><a class="font-medium py-3 px-4 hover:bg-indigo-700 hover:bg-opacity-60 rounded-b-2xl" href="#">Proyectos</a></li>
-      <li><a class="font-medium py-3 px-4 hover:bg-indigo-700 hover:bg-opacity-60 rounded-b-2xl" href="#">Contacto</a></li>
+  <nav class="">
+    <ul class="arcade flex gap-4 justify-around items-center uppercase [&>li>a]:inline-block [&>li>a]:transition-all">
+      <li><a class="py-5 md:px-4 md:hover:bg-indigo-600 md:hover:bg-opacity-40 rounded-b-2xl" href="/">Inicio</a></li>
+      <li><a class="py-5 md:px-4 md:hover:bg-indigo-600 md:hover:bg-opacity-40 rounded-b-2xl" href="/skills">Skills</a></li>
+      <li><a class="py-5 md:px-4 md:hover:bg-indigo-600 md:hover:bg-opacity-40 rounded-b-2xl" href="/proyectos">Proyectos</a></li>
+      <li><a class="py-5 md:px-4 md:hover:bg-indigo-600 md:hover:bg-opacity-40 rounded-b-2xl" href="/contacto">Contacto</a></li>
     </ul>
   </nav>
 
-  <nav class="flex flex-grow basis-0 justify-end">
+  <nav class="md:flex flex-grow basis-0 justify-end hidden md:visible">
     <ul class="flex gap-3 items-center">
       <li><a href="linkdin">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin hover:fill-indigo-950 hover:stroke-indigo-300 transition-colors" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin md:hover:fill-indigo-950 md:hover:stroke-indigo-300 transition-colors" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
           <path d="M8 11l0 5" />
@@ -30,7 +30,7 @@
       </li>
       <li>
         <button>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world hover:rotate-180 transition-all inline-block" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world md:hover:rotate-180 transition-all inline-block" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
             <path d="M3.6 9h16.8" />
